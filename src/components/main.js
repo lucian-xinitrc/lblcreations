@@ -1,7 +1,7 @@
 const Benefits = () => {
 	return (
 		<>
-			<section class="bg-[#070F2B] dark:bg-[#070F2B] py-40 mx-5 sm:mx-10 my-20 rounded-[1vw] shadow-xl/30">
+			<section class="bg-[#070F2B] dark:bg-[#070F2B] py-15 mx-5 sm:mx-10 my-20 rounded-[1vw] shadow-xl/30">
 			  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 shadow-md">
 			      <div class="max-w-screen mb-8 lg:mb-16">
 			          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">Designed for business teams like yours</h2>
@@ -40,7 +40,7 @@ const Benefits = () => {
 const About = () => {
 	return (
 		<>
-			<section id="about" class="bg-white dark:bg-[#d9d9d9] py-20 mx-10 text-black">
+			<section id="about" class="bg-white dark:bg-[#d9d9d9] py-5 mx-10 text-black">
 				<div class="max-w-screen mb-8 lg:mb-16">
 			        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-black text-black text-center">About us</h2>
 			    </div>
@@ -60,7 +60,7 @@ const About = () => {
 
 const Contact = () => {
 	return (
-		<section id="contact" class="bg-white dark:bg-[#d9d9d9] p-10 sm:p-30">
+		<section id="contact" class="bg-white dark:bg-[#d9d9d9] p-5 sm:p-5">
 		  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md text-black">
 		      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-black dark:text-black">Contact Us</h2>
 		      <form action="#" class="space-y-8" >
@@ -87,16 +87,17 @@ const Contact = () => {
 const Preview = () => {
 	return (
 		<>	
-			<section id="services" class="bg-[#070F2B] dark:bg-[#070F2B] px-5 mx-10 my-20 rounded-[1vw] shadow-xl/30">
-  <div class="py-8 px-2 mx-auto max-w-screen-xl lg:py-16 lg:px-40 ">
+			<section id="services" class="bg-[#070F2B] dark:bg-[#070F2B] px-5 mx-10 my-10 rounded-[1vw] shadow-xl/30">
+  <div class="py-8 px-2 mx-auto max-w-screen-xl lg:py-10 ">
       <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Products</h2>
           <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">High Quality printed photos and business cards that will enhance your capabilities.</p>
       </div> 
-      <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+      <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-3">
           <div class="items-center bg-gray-50 rounded-lg p-2 shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-              <a>
-                  <img class="w-full rounded-lg grayscale transition duration-700 ease-in-out hover:grayscale-0 active:grayscale-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              <a className="relative w-72 h-48 overflow-hidden rounded-xl group cursor-pointer">
+                  <img className="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700 group-hover:opacity-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              		<img className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100 " src="https://images.ctfassets.net/hrltx12pl8hq/1fR5Y7KaK9puRmCDaIof7j/09e2b2b9eaf42d450aba695056793607/vector1.jpg" alt="Michael Avatar" />
               </a>
               <div class="px-5">
               	<h2 class="text-white text-xl dark:text-white">Classic Photos</h2>
@@ -108,8 +109,9 @@ const Preview = () => {
               </div>
           </div> 
           <div class="items-center bg-gray-50 rounded-lg p-2 shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-              <a>
-                  <img class="w-full rounded-lg grayscale transition duration-700 ease-in-out hover:grayscale-0 active:grayscale-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+             <a className="relative w-72 h-48 overflow-hidden rounded-xl group cursor-pointer">
+                  <img className="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700 group-hover:opacity-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              		<img className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100 " src="https://images.ctfassets.net/hrltx12pl8hq/1fR5Y7KaK9puRmCDaIof7j/09e2b2b9eaf42d450aba695056793607/vector1.jpg" alt="Michael Avatar" />
               </a>
               <div class="px-5">
               	<h2 class="text-white text-xl dark:text-white">Business Cards</h2>
@@ -121,8 +123,37 @@ const Preview = () => {
               </div>
           </div> 
           <div class="items-center bg-gray-50 rounded-lg p-2 shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-              <a>
-                  <img class="w-full rounded-lg grayscale transition duration-700 ease-in-out hover:grayscale-0 active:grayscale-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+             <a className="relative w-72 h-48 overflow-hidden rounded-xl group cursor-pointer">
+                  <img className="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700 group-hover:opacity-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              		<img className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100 " src="https://images.ctfassets.net/hrltx12pl8hq/1fR5Y7KaK9puRmCDaIof7j/09e2b2b9eaf42d450aba695056793607/vector1.jpg" alt="Michael Avatar" />
+              </a>
+              <div class="px-5">
+              	<h2 class="text-white text-xl dark:text-white">Business Cards</h2>
+                  <h3 class="text-md font-bold tracking-tight text-gray-900 m-2 dark:text-white">
+                      5$/page
+                  </h3>
+                  
+                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">[Description Services 2]</p>
+              </div>
+          </div> 
+          <div class="items-center bg-gray-50 rounded-lg p-2 shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+             <a className="relative w-72 h-48 overflow-hidden rounded-xl group cursor-pointer">
+                  <img className="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700 group-hover:opacity-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              		<img className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100 " src="https://images.ctfassets.net/hrltx12pl8hq/1fR5Y7KaK9puRmCDaIof7j/09e2b2b9eaf42d450aba695056793607/vector1.jpg" alt="Michael Avatar" />
+              </a>
+              <div class="px-5">
+              	<h2 class="text-white text-xl dark:text-white">Business Cards</h2>
+                  <h3 class="text-md font-bold tracking-tight text-gray-900 m-2 dark:text-white">
+                      5$/page
+                  </h3>
+                  
+                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">[Description Services 2]</p>
+              </div>
+          </div> 
+          <div class="items-center bg-gray-50 rounded-lg p-2 shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+              <a className="relative w-72 h-48 overflow-hidden rounded-xl group cursor-pointer">
+                  <img className="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-[1s,15s] group-hover:opacity-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              		<img className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[1s,15s] group-hover:opacity-100 " src="https://images.ctfassets.net/hrltx12pl8hq/1fR5Y7KaK9puRmCDaIof7j/09e2b2b9eaf42d450aba695056793607/vector1.jpg" alt="Michael Avatar" />
               </a>
               <div class="px-5">
               	<h2 class="text-white text-xl dark:text-white">Classic Photos</h2>
@@ -134,8 +165,9 @@ const Preview = () => {
               </div>
           </div> 
           <div class="items-center bg-gray-50 rounded-lg p-2 shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-              <a>
-                  <img class="w-full rounded-lg grayscale transition duration-700 ease-in-out hover:grayscale-0 active:grayscale-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              <a className="relative w-72 h-48 overflow-hidden rounded-xl group cursor-pointer">
+                  <img className="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700 group-hover:opacity-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              		<img className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100 " src="https://images.ctfassets.net/hrltx12pl8hq/1fR5Y7KaK9puRmCDaIof7j/09e2b2b9eaf42d450aba695056793607/vector1.jpg" alt="Michael Avatar" />
               </a>
               <div class="px-5">
               	<h2 class="text-white text-xl dark:text-white">Classic Photos</h2>

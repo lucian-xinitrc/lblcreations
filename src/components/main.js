@@ -1,8 +1,8 @@
 const Benefits = () => {
 	return (
 		<>
-			<section class="bg-white dark:bg-gray-900 py-40">
-			  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+			<section class="bg-[#070F2B] dark:bg-[#070F2B] py-40 mx-5 sm:mx-10 my-20 rounded-[1vw] shadow-xl/30">
+			  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 shadow-md">
 			      <div class="max-w-screen mb-8 lg:mb-16">
 			          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">Designed for business teams like yours</h2>
 			      </div>
@@ -40,14 +40,14 @@ const Benefits = () => {
 const About = () => {
 	return (
 		<>
-			<section class="bg-white dark:bg-[#d9d9d9] py-20 text-black">
+			<section id="about" class="bg-white dark:bg-[#d9d9d9] py-20 mx-10 text-black">
 				<div class="max-w-screen mb-8 lg:mb-16">
 			        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-black text-black text-center">About us</h2>
 			    </div>
 			    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
 
-			        <img class="w-full dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg" alt="dashboard image" />
-			        <img class="w-full hidden dark:block" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg" alt="dashboard image" />
+			        <img class="w-full dark:hidden shadow-md" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg" alt="dashboard image" />
+			        <img class="w-full hidden dark:block shadow-xl/30 rounded-[10px]" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg" alt="dashboard image" />
 			        <div class="mt-4 md:mt-0">
 			            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-black text-black">Who we are, and what we do</h2>
 			            <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-black">We are a company that offers printing services with photo editing included</p>
@@ -60,27 +60,97 @@ const About = () => {
 
 const Contact = () => {
 	return (
-		<section class="bg-white dark:bg-gray-900">
-		  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-		      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
-		      <form action="#" class="space-y-8">
+		<section id="contact" class="bg-white dark:bg-[#d9d9d9] p-10 sm:p-30">
+		  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md text-black">
+		      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-black dark:text-black">Contact Us</h2>
+		      <form action="#" class="space-y-8" >
 		          <div>
-		              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-		              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@email.com" required />
+		              <label for="email" class="block mb-2 text-sm font-medium text-black dark:text-black">Your email</label>
+		              <input type="email" id="email" class="dark:bg-[#070F2B] text-white placeholder-text-white sm:text-white md:mx-5 sm:mx-3 rounded-lg shadow-xl/30 focus:outline-none  transition-colors flex items-center justify-center hover:bg-[#070F2B] dark:hover:bg-[#070F2B] hover:text-white hover:border-transparent focus:outline-none font-medium text-sm sm:text-base hover:placeholder:text-gray-400 h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-full md:w-full" placeholder="name@email.com" required />
 		          </div>
 		          <div>
-		              <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-		              <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" requiredv />
+		              <label for="subject" class="block mb-2 text-sm font-medium text-black dark:text-black">Subject</label>
+		              <input type="text" id="subject" class="dark:bg-[#070F2B] text-white sm:text-white md:mx-5 sm:mx-3 rounded-lg shadow-xl/30 focus:outline-none  transition-colors flex items-center justify-center hover:bg-[#070F2B] dark:hover:bg-[#070F2B] hover:text-white hover:border-transparent focus:outline-none font-medium text-sm sm:text-base hover:placeholder:text-gray-400 h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-full md:w-full" placeholder="Let us know how we can help you" requiredv />
 		          </div>
 		          <div class="sm:col-span-2">
-		              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-		              <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+		              <label for="message" class="block mb-2 text-sm font-medium text-black dark:text-black">Your message</label>
+		              <textarea id="message" rows="6" class="dark:bg-[#070F2B] text-white sm:text-white md:mx-5 sm:mx-3 rounded-lg shadow-xl/30 focus:outline-none  transition-colors flex items-center justify-center hover:bg-[#070F2B] dark:hover:bg-[#070F2B] hover:text-white hover:border-transparent focus:outline-none font-medium text-sm sm:text-base hover:placeholder:text-gray-400 h-20 sm:h-20 sm:h-12 px-4 sm:px-5 w-full sm:w-full md:w-full p-5 no-scrollbar" placeholder="Leave a comment..."></textarea>
 		          </div>
-		          <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
-		      </form>
+					<button 
+                    type="submit"
+                    className="dark:bg-[#070F2B] text-white sm:text-white md:mx-5 sm:mx-3 rounded-lg shadow-xl/30 focus:outline-none  transition-colors flex items-center justify-center hover:bg-[#070F2B] dark:hover:bg-[#070F2B] hover:text-white hover:border-transparent focus:outline-none font-medium text-sm sm:text-base hover:placeholder:text-gray-400 h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-full md:w-full">Send</button>		      </form>
 		  </div>
 		</section>
 	);
 }
 
-export { Benefits, About, Contact };
+const Preview = () => {
+	return (
+		<>	
+			<section id="services" class="bg-[#070F2B] dark:bg-[#070F2B] px-5 mx-10 my-20 rounded-[1vw] shadow-xl/30">
+  <div class="py-8 px-2 mx-auto max-w-screen-xl lg:py-16 lg:px-40 ">
+      <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Productus</h2>
+          <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">High Quality printed photos and business cards that will enhance your capabilities.</p>
+      </div> 
+      <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+          <div class="items-center bg-gray-50 rounded-lg p-2 shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                  <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              </a>
+              <div class="px-5">
+              	<h2 class="text-white text-xl dark:text-white">Classic Photos</h2>
+                  <h3 class="text-md font-bold tracking-tight text-gray-900 m-2 dark:text-white">
+                      5$/photo
+                  </h3>
+                  
+                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">[Description Services 1]</p>
+              </div>
+          </div> 
+          <div class="items-center bg-gray-50 rounded-lg p-2 shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                  <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              </a>
+              <div class="px-5">
+              	<h2 class="text-white text-xl dark:text-white">Business Cards</h2>
+                  <h3 class="text-md font-bold tracking-tight text-gray-900 m-2 dark:text-white">
+                      5$/page
+                  </h3>
+                  
+                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">[Description Services 2]</p>
+              </div>
+          </div> 
+          <div class="items-center bg-gray-50 rounded-lg p-2 shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                  <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              </a>
+              <div class="px-5">
+              	<h2 class="text-white text-xl dark:text-white">Classic Photos</h2>
+                  <h3 class="text-md font-bold tracking-tight text-gray-900 m-2 dark:text-white">
+                      5$
+                  </h3>
+                  
+                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">[Description Services 3]</p>
+              </div>
+          </div> 
+          <div class="items-center bg-gray-50 rounded-lg p-2 shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                  <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              </a>
+              <div class="px-5">
+              	<h2 class="text-white text-xl dark:text-white">Classic Photos</h2>
+                  <h3 class="text-md font-bold tracking-tight text-gray-900 m-2 dark:text-white">
+                      5$
+                  </h3>
+                  
+                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">[Description Services 4]</p>
+              </div>
+          </div> 
+      </div>  
+  </div>
+</section>
+		</>
+	);
+}
+
+export { Benefits, About, Contact, Preview };

@@ -1,6 +1,12 @@
+'use client'
 import 'flowbite';
+import { useEffect } from "react";
 
 const Navbar = () => {
+	useEffect(() => {
+    	import("flowbite");
+  	}, []);
+
 	return (
 		<>
 		<nav className="bg-transparent border-gray-200 px-10 sm:p-5 dark:bg-transparent">
@@ -15,21 +21,15 @@ const Navbar = () => {
 		        </svg>
 		    </button>
 		    <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-		      <ul className="bg-transparent font-medium text-black flex flex-col py-10 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+		      <ul className="bg-transparent border-l-4 border-l-[#070F2B] rounded-none sm:bg-transparent font-medium text-black flex flex-col py-2 md:p-0 mt-4 border border-transparent rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
 		        <li>
-		          <a href="#" className="block py-2 px-3 text-black bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-[#ff0000]" aria-current="page">Home</a>
+		          <a href="#about" className="block py-2 px-3 text-black sm:text-black rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ff0000] md:p-0 md:dark:hover:text-[#ff0000] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
 		        </li>
 		        <li>
-		          <a href="#" className="block py-2 px-3 text-black rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ff0000] md:p-0 md:dark:hover:text-[#ff0000] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+		          <a href="#services" className="block py-2 px-3 text-black sm:text-black rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#ff0000] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
 		        </li>
 		        <li>
-		          <a href="#" className="block py-2 px-3 text-black rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#ff0000] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-		        </li>
-		        <li>
-		          <a href="#" className="block py-2 px-3 text-black rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#ff0000] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-		        </li>
-		        <li>
-		          <a href="#" className="block py-2 px-3 text-black rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-black md:dark:hover:text-[#ff0000] dark:hover:bg-gray-700 dark:hover:text-[#ff0000] md:dark:hover:bg-transparent">Contact</a>
+		          <a href="#contact" className="block py-2 px-3 text-black sm:text-black rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#ff0000] dark:hover:bg-gray-700 dark:hover:text-[#ff0000] md:dark:hover:bg-transparent">Contact</a>
 		        </li>
 		      </ul>
 		    </div>

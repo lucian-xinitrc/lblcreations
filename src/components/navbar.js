@@ -20,7 +20,7 @@ const Navbar = () => {
 		            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
 		        </svg>
 		    </button>
-		    <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+		    <div className="hidden sm:transition duration-700 ease-in-out w-full md:block md:w-auto" id="navbar-default">
 		      <ul className="bg-transparent border-l-4 border-l-[#070F2B] rounded-none sm:bg-transparent font-medium text-black flex flex-col py-2 md:p-0 mt-4 border border-transparent rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
 		        <li>
 		          <a href="#about" className="block py-2 px-3 text-black sm:text-black rounded-sm hover:text-[#ff000] md:hover:bg-transparent md:border-0 md:hover:text-[#ff0000] md:p-0 md:dark:hover:text-[#ff0000] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>

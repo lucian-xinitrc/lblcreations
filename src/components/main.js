@@ -95,8 +95,8 @@ const Preview = () => {
       </div> 
       <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
           <div class="items-center bg-gray-50 rounded-lg p-2 shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-              <a href="#">
-                  <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              <a>
+                  <img class="w-full rounded-lg grayscale transition duration-700 ease-in-out hover:grayscale-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
               </a>
               <div class="px-5">
               	<h2 class="text-white text-xl dark:text-white">Classic Photos</h2>
@@ -108,8 +108,8 @@ const Preview = () => {
               </div>
           </div> 
           <div class="items-center bg-gray-50 rounded-lg p-2 shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-              <a href="#">
-                  <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              <a>
+                  <img class="w-full rounded-lg grayscale transition duration-700 ease-in-out hover:grayscale-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
               </a>
               <div class="px-5">
               	<h2 class="text-white text-xl dark:text-white">Business Cards</h2>
@@ -121,8 +121,8 @@ const Preview = () => {
               </div>
           </div> 
           <div class="items-center bg-gray-50 rounded-lg p-2 shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-              <a href="#">
-                  <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              <a>
+                  <img class="w-full rounded-lg grayscale transition duration-700 ease-in-out hover:grayscale-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
               </a>
               <div class="px-5">
               	<h2 class="text-white text-xl dark:text-white">Classic Photos</h2>
@@ -134,8 +134,8 @@ const Preview = () => {
               </div>
           </div> 
           <div class="items-center bg-gray-50 rounded-lg p-2 shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-              <a href="#">
-                  <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+              <a>
+                  <img class="w-full rounded-lg grayscale transition duration-700 ease-in-out hover:grayscale-0" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
               </a>
               <div class="px-5">
               	<h2 class="text-white text-xl dark:text-white">Classic Photos</h2>

@@ -19,7 +19,6 @@ const geistMono = Geist_Mono({
 
 
 export const metadata = {
-  export const metadata = {
   title: "LBL Prints",
   description: "We print your future!",
   keywords: ['Next.js', 'SEO', 'Thumbnail', 'Tutorial'],

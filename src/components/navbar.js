@@ -9,7 +9,7 @@ const Navbar = () => {
 
 	return (
 		<>
-		<nav className="bg-transparent border-gray-200 px-10 sm:p-5 dark:bg-transparent">
+		<nav className="dark:bg-[#d9d9d9] bg-white px-10 sm:p-5 dark:bg-transparent">
 		  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-10 text-black">
 		    <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
 		        <span className="self-center text-2xl font-semibold whitespace-nowrap">LBL Creations</span>

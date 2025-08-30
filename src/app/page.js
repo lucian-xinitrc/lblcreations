@@ -6,7 +6,7 @@ import { Footer } from "../components/footer.js";
 
 export default function Home() {
   return (
-    <section className="bg-[#d9d9d9] h-screen">
+    <section className="dark:bg-[#d9d9d9] bg-white h-screen">
       <Navbar />
       <Header />
       <Benefits />
